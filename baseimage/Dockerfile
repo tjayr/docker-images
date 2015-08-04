@@ -5,7 +5,8 @@ FROM ubuntu:14.04
 MAINTAINER Tony Ayres <tony.ayres@dcu.ie>
 
 RUN apt-get update
-RUN apt-get -q -y install openssl && apt-get -q -y install wget
+RUN apt-get -q -y install openssl 
+RUN apt-get -q -y install wget
 
 RUN wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u45-b14/jdk-8u45-linux-x64.tar.gz -o /jdk-8u45-linux-x64.tar.gz
 
